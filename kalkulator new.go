@@ -15,6 +15,7 @@ func main() {
 		x := strings.Split(z, "+")
 		for qwe := 0; qwe < 2; qwe++ {
 			p := x[qwe]
+			p = strings.TrimSpace(p)
 			if len(p) > 12 {
 				panic("ваша строка выходит за рамки 10 символов")
 			}
@@ -53,6 +54,7 @@ func main() {
 		x := strings.Split(z, "-")
 		for qwe := 0; qwe < 2; qwe++ {
 			p := x[qwe]
+			p = strings.TrimSpace(p)
 			if len(p) > 12 {
 				panic("ваша строка выходит за рамки 10 символов")
 			}
@@ -93,6 +95,7 @@ func main() {
 		x := strings.Split(z, "*")
 		umn := ""
 		p := x[0]
+		p = strings.TrimSpace(p)
 		if len(p) > 12 {
 			panic("ваша строкаа выходит за рамки 10 символов")
 		}
@@ -142,6 +145,7 @@ func main() {
 	if strings.Contains(z, "/") {
 		x := strings.Split(z, "/")
 		p := x[0]
+		p = strings.TrimSpace(p)
 		if len(p) > 12 {
 			panic("ваша строкаа выходит за рамки 10 символов")
 		}
